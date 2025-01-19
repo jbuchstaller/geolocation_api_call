@@ -13,9 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-      with:
-          sparse-checkout: 'geolcation_api_call/geolocation-package'
-          sparse-checkout-cone-mode: false
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
